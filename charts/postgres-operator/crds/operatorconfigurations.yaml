@@ -70,10 +70,8 @@ spec:
               type: boolean
             max_instances:
               type: integer
-              minimum: -1  # -1 = disabled
             min_instances:
               type: integer
-              minimum: -1  # -1 = disabled
             resync_period:
               type: string
             repair_period:
@@ -86,7 +84,6 @@ spec:
                 type: string
             workers:
               type: integer
-              minimum: 1
             users:
               type: object
               properties:
@@ -343,7 +340,6 @@ spec:
                   #default: "transaction"
                 connection_pooler_number_of_instances:
                   type: integer
-                  minimum: 2
                   #default: 2
                 connection_pooler_default_cpu_limit:
                   type: string
